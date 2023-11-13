@@ -20,5 +20,4 @@ def Fibonacci(n):
         return(fibonacci)
         
 
-num=int(input("Ingrese el numero: "))
-print(Fibonacci(num))
+
