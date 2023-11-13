@@ -1,21 +1,22 @@
 def Fibonacci(n):
-    #variable count para contar as veces que se repite o bucle.
+    #Inicializamos a variable count para contar as veces que se repite o bucle.
     count = 0
-    #a e b inicializan os 2 primeiros valores da sucesión fibonacci
+    #Se inicializan as variables a e b cos 2 primeiros valores da sucesión fibonacci.
     a = 0
     b = 1
-    #inicializamos un aray no que se guardara o resultado da sucedión
+    #Inicializamos un array no que se gardará o resultado da sucesión.
     fibonacci=[]
-    #Si o numero introducido e negativo non se pode realizar a sucesión
+    #Si o número introducido e negativo non se pode realizar a sucesión.
     if(n<=0):
         return("Ingrese un numero mayor a 0")
     else:
-    #mentres a conta sea inferior ao numero introducido volvera a executarse a suma e a reasignación das variables a=b e b= ao resultado da suma anterior
+    #Mentres a conta sea inferior ao número introducido volvera a executarse a suma e a reasignación das variables a=b e b=resultado da suma anterior.
         while count<n:
             fibonacci.append(a)
             result=a+b
             a=b
             b=result
+            #Incrementamos a conta en 1.
             count+=1
         return(fibonacci)
         
