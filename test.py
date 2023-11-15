@@ -2,10 +2,11 @@ import unittest
 from fibo import Fibonacci
 #Instanciamos a clase TestFibonacci que hereda da clase unittest.TestCase
 class TestFibonacci(unittest.TestCase):
-    #Definimos a función do test que se asegure de que o 5 elemento da sucesión é igual a 3, debe iniciar por test_
+    #Definimos a función do test que se asegure de que o 5 elemento da sucesión é igual a 3, debe iniciar por test
     def test_quinto_elemento_fibonacci(self):
-        self.assertEqual(Fibonacci(5)[4], 3)
+        self.assertEqual(Fibonacci(5)[4], 3, 'La quinta posición de la sucesión no es la esperada')
     
 
-#Executa o código main() da biblioteca unittest que se encarga de executar os test que se definiron anteriormente
-unittest.main()
+#Executa o código main() da biblioteca unittest que se encarga de executar os test que se definiron anteriormente si o modulo se executa directamente e ten o nome 'main'
+if __name__ == '__main__':
+    unittest.main()
