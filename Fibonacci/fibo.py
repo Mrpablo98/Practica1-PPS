@@ -22,3 +22,4 @@ def Fibonacci(n):
         
 
 
+print(Fibonacci(5))
