@@ -21,5 +21,5 @@ def Fibonacci(n):
         return(fibonacci)
         
 
-
-print(Fibonacci(5))
+num=int(input("Introduce un numero: "))
+print(Fibonacci(num))
