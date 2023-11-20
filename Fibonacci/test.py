@@ -9,12 +9,12 @@ class TestFibonacci(unittest.TestCase):
             esperado = 3
             resultado = Fibonacci(5)[4]
             self.assertEqual(resultado, esperado, f'A quinta posición da sucesión debería ser {esperado}, pero recibiuse: {resultado}')
-    elif num<5 and num>0:
-        def test_primeiro_elemento_fibonacci(self):
-            esperado = 0
-            resultado = Fibonacci(1)[1]
+    if num<5 and num>1:
+        def test_segundo_elemento_fibonacci(self):
+            esperado = 1
+            resultado = Fibonacci(4)[1]
             self.assertEqual(resultado, esperado, f'A primeira posición da sucesión debería ser {esperado}, pero recibiuse: {resultado}')
-    elif num>=10:
+    if num>=10:
         def test_decimo_elemento_fibonacci(self):
             esperado = 34
             resultado = Fibonacci(10)[9]
