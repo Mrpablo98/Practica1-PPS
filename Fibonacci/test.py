@@ -1,20 +1,19 @@
 import unittest
 from fibo import Fibonacci
-from fibo import num
 #Instanciamos a clase TestFibonacci que hereda da clase unittest.TestCase
 class TestFibonacci(unittest.TestCase):
     #Definimos a función do test que se asegure de que o 5 elemento da sucesión é igual a 3.
-    if num>=5:
+    
         def test_quinto_elemento_fibonacci(self):
             esperado = 3
             resultado = Fibonacci(5)[4]
             self.assertEqual(resultado, esperado, f'A quinta posición da sucesión debería ser {esperado}, pero recibiuse: {resultado}')
-    if num<5 and num>1:
+    
         def test_segundo_elemento_fibonacci(self):
-            esperado = 1
-            resultado = Fibonacci(4)[1]
+            esperado = 0
+            resultado = Fibonacci(1)[0]
             self.assertEqual(resultado, esperado, f'A primeira posición da sucesión debería ser {esperado}, pero recibiuse: {resultado}')
-    if num>=10:
+    
         def test_decimo_elemento_fibonacci(self):
             esperado = 34
             resultado = Fibonacci(10)[9]
