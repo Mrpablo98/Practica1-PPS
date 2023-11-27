@@ -1,6 +1,4 @@
 def Fibonacci(n):
-    #Inicializamos a variable 'count' para contar as veces que se repite o bucle.
-    count = 0
     #Se inicializan as variables 'a' e 'b' cos 2 primeiros valores da sucesión fibonacci.
     a = 0
     b = 1
@@ -11,15 +9,12 @@ def Fibonacci(n):
         return("Ingrese un numero mayor a 0")
     else:
     #Mentres a conta sea inferior ao número introducido volvera a executarse a suma máis a reasignación das variables 'a=b' e 'b=result(a+b)'.
-        while count<n:
+        for i in range(0, n):
             fibonacci.append(a)
             result=a+b
             a=b
             b=result
-            #Incrementamos a conta en 1.
-            count+=1
-        return(fibonacci)
-        
 
 num=int(input("Introduce un numero: "))
 print(Fibonacci(num))
+
