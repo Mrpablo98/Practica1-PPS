@@ -14,6 +14,7 @@ def Fibonacci(n):
             result=a+b
             a=b
             b=result
+        return fibonacci
 
 num=int(input("Introduce un numero: "))
 print(Fibonacci(num))
